@@ -8,7 +8,7 @@ A VNC server must be set using the `VNC_SERVER` environment variable. Both the h
 
 For example, if you wanted to run noVNC on your localhost port `3000` to connect to a VNC server hosted at `192.168.1.200` on port `5900`, you'd run the following command:
 
-`docker run --rm -p 3000:8080 -e VNC_SERVER=192.168.1.200:5900 ghrc.io/whimsical-c4lic0/vnc:latest`
+`docker run --rm -p 3000:8080 -e VNC_SERVER=192.168.1.200:5900 ghrc.io/whimsical-c4lic0/novnc:latest`
 
 ## Image Contents
 
