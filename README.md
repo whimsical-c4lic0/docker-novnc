@@ -4,11 +4,15 @@ This image is intended to be used as a VNC client to connect to existing VNC ser
 
 ## Usage
 
-A VNC server must be set using the `VNC_SERVER` environment variable. Both the host and port must be defined. The noVNC is available on the container's port 8080.
+A VNC server must be set using the `VNC_SERVER` environment variable. Both the host and port must be defined. The noVNC service is available on the container's port 8080.
 
 For example, if you wanted to run noVNC on your localhost port `3000` to connect to a VNC server hosted at `192.168.1.200` on port `5900`, you'd run the following command:
 
-`docker run --rm -p 3000:8080 -e VNC_SERVER=192.168.1.200:5900 ghrc.io/whimsical-c4lic0/novnc:latest`
+```
+docker run --rm -p 3000:8080 -e VNC_SERVER=192.168.1.200:5900 ghrc.io/whimsical-c4lic0/novnc:latest
+```
+
+Then open a web browser, and navigate to `http://localhost:3000`
 
 ## Image Contents
 
